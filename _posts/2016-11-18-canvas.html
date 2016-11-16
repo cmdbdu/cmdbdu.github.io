@@ -1,0 +1,24 @@
+---
+layout: canvas
+title: canvas demo
+---
+<canvas id='canvas' style='display:block;'></canvas>
+
+<script>
+  var canvas = document.getElementById('canvas'),
+  cxt = canvas.getContext('2d'),
+  w = canvas.width;
+  h = canvas.height;
+  cxt.fillStyle='#FF000';
+  cxt.fillRect(0,0,w,h);
+</script>
+
+<h1> 代码部分</h1>
+{% highlight ruby %}
+  var canvas = document.getElementsByTagName('canvas')[0],
+  cxt = canvas.getContext('2d'),
+  w = canvas.width;
+  h = canvas.height;
+  cxt.fillStyle='#FF000';
+  cxt.fillRect(0,0,w,h);
+{% endhighlight %}
